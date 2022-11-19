@@ -1,0 +1,3 @@
+#+TITLE: Advent of Code 2021 in AssemblyScript
+
+You have to supply your input in the `days/$day/input.txt` file, for each day.

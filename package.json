@@ -1,0 +1,25 @@
+{
+  "name": "as-aoc-2021",
+  "version": "0.0.1",
+  "description": "Advent-of-Code in AssemblyScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@assemblyscript/loader": "^0.21.6",
+    "assemblyscript": "^0.21.6"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  }
+}
